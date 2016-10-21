@@ -1,0 +1,8 @@
+--- # Ansible Role [Common]: vars.debian (Axel Pardemann <axelitus@GitHub>)
+repos: []
+packages:
+  - { name: "git", state: "latest" }
+  - { name: "htop", state: "latest" }
+  - { name: "openssl", state: "latest" }
+  - { name: "python-software-properties", state: "latest" }
+  - { name: "vim", state: "latest" }

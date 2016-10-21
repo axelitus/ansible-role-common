@@ -1,0 +1,8 @@
+--- # Ansible Role [Common]: tasks.ubuntu.install_tools (Axel Pardemann <axelitus@GitHub>)
+- name: Install common packages
+  apt:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  with_items: "{{ packages }}"
+  when: common_add_repos|succeeded
+  register: common_install_packages

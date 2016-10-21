@@ -1,0 +1,7 @@
+--- # Ansible Role [Common]: tasks.ubuntu.add_repos (Axel Pardemann <axelitus@GitHub>)
+- name: Add PPA Repositories
+  apt_repository:
+    repo: "{{ item.repo }}"
+    state: "{{ item.state }}"
+  with_items: "{{ repos }}"
+  register: common_add_repos
