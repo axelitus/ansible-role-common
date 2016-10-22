@@ -1,6 +1,6 @@
 --- # Ansible Role [Common]: vars.debian (Axel Pardemann <axelitus@GitHub>)
-repos: []
-packages:
+axelitus_common_repos: []
+axelitus_common_packages:
   - { name: "git", state: "latest" }
   - { name: "htop", state: "latest" }
   - { name: "openssl", state: "latest" }

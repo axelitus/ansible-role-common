@@ -3,6 +3,6 @@
   apt:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
-  with_items: "{{ packages }}"
+  with_items: "{{ axelitus_common_packages }}"
   when: common_add_repos|succeeded
   register: common_install_packages
